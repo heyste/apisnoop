@@ -80,7 +80,7 @@
 
 * Identifying an untested feature Using APISnoop                     :export:
 
-According to this APIsnoop query, there are still some remaining Deployment endpoints which are untested.
+According to this APIsnoop query, there are still some remaining RESOURCENAME endpoints which are untested.
 
   #+NAME: untested_stable_core_endpoints
   #+begin_src sql-mode :eval never-export :exports both :session none
@@ -91,8 +91,9 @@ According to this APIsnoop query, there are still some remaining Deployment endp
       -- description,
       kind
       FROM untested_stable_core_endpoints
+      where path not like '%volume%'
       -- and kind like ''
-      WHERE operation_id ilike '%Deployment%'
+      -- and operation_id ilike '%%'
      ORDER BY kind,operation_id desc
      LIMIT 25
            ;
@@ -100,48 +101,70 @@ According to this APIsnoop query, there are still some remaining Deployment endp
 
  #+RESULTS: untested_stable_core_endpoints
  #+begin_SRC example
-  operation_id | kind 
- --------------+------
- (0 rows)
+                 operation_id                |      kind       
+ --------------------------------------------+-----------------
+  createCoreV1NamespacedPodBinding           | Binding
+  createCoreV1NamespacedBinding              | Binding
+  readCoreV1ComponentStatus                  | ComponentStatus
+  listCoreV1ComponentStatus                  | ComponentStatus
+  replaceCoreV1NamespacedEndpoints           | Endpoints
+  patchCoreV1NamespacedEndpoints             | Endpoints
+  listCoreV1EndpointsForAllNamespaces        | Endpoints
+  deleteCoreV1CollectionNamespacedEndpoints  | Endpoints
+  replaceCoreV1NamespacedEvent               | Event
+  readCoreV1NamespacedEvent                  | Event
+  patchCoreV1NamespacedEvent                 | Event
+  listCoreV1NamespacedEvent                  | Event
+  listCoreV1EventForAllNamespaces            | Event
+  deleteCoreV1NamespacedEvent                | Event
+  deleteCoreV1CollectionNamespacedEvent      | Event
+  createCoreV1NamespacedEvent                | Event
+  patchCoreV1NamespacedLimitRange            | LimitRange
+  listCoreV1LimitRangeForAllNamespaces       | LimitRange
+  deleteCoreV1CollectionNamespacedLimitRange | LimitRange
+  replaceCoreV1NamespaceStatus               | Namespace
+  replaceCoreV1NamespaceFinalize             | Namespace
+  readCoreV1NamespaceStatus                  | Namespace
+  patchCoreV1NamespaceStatus                 | Namespace
+  patchCoreV1Namespace                       | Namespace
+  listCoreV1Namespace                        | Namespace
+ (25 rows)
 
  #+end_SRC
 
 * API Reference and feature documentation                            :export:
 - [[https://kubernetes.io/docs/reference/kubernetes-api/][Kubernetes API Reference Docs]]
-- [[https://github.com/kubernetes/client-go/blob/master/kubernetes/typed/core/v1/Deployment.go][client-go - Deployment]] 
+- [[https://github.com/kubernetes/client-go/blob/master/kubernetes/typed/core/v1/RESOURCENAME.go][client-go - RESOURCENAME]] 
 
 * The mock test                                                      :export:
 ** Test outline
-1. Create a Deployment with a static label
+1. Create a RESOURCENAME with a static label
 
-2. Patch the Deployment with a new Label and updated data
+2. Patch the RESOURCENAME with a new Label and updated data
 
-3. Get the Deployment to ensure it's patched
+3. Get the RESOURCENAME to ensure it's patched
 
-4. List all Deployments in all Namespaces
-   find the Deployment(1)
-   ensure that the Deployment is found and is patched
+4. List all RESOURCENAMEs in all Namespaces
+   find the RESOURCENAME(1)
+   ensure that the RESOURCENAME is found and is patched
 
-5. Delete Namespaced Deployment(1) via a Collection with a LabelSelector
+5. Delete Namespaced RESOURCENAME(1) via a Collection with a LabelSelector
 
 ** Test the functionality in Go
    #+begin_src go
      package main
 
      import (
-       "encoding/json"
        "fmt"
        "flag"
        "os"
-       v1 "k8s.io/api/core/v1"
-       appsv1 "k8s.io/api/apps/v1"
+       // v1 "k8s.io/api/core/v1"
        // "k8s.io/client-go/dynamic"
        // "k8s.io/apimachinery/pkg/runtime/schema"
        metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
        "k8s.io/client-go/kubernetes"
-       "k8s.io/apimachinery/pkg/types"
+       // "k8s.io/apimachinery/pkg/types"
        "k8s.io/client-go/tools/clientcmd"
-       watch "k8s.io/apimachinery/pkg/watch"
      )
 
      func main() {
@@ -160,178 +183,23 @@ According to this APIsnoop query, there are still some remaining Deployment endp
        // DynamicClientSet, _ := dynamic.NewForConfig(config)
        // podResource := schema.GroupVersionResource{Group: "", Version: "v1", Resource: "pods"}
 
-       testDeploymentName := "test-deployment"
-       testDeploymentInitialImage := "nginx"
-       testDeploymentPatchImage := "alpine"
-       //testDeploymentUpdateImage := testDeploymentInitialImage
-       testDeploymentDefaultReplicas := int32(3)
-       testDeploymentMinimumReplicas := int32(1)
-       testDeploymentLabelSelectors := metav1.LabelSelector{
-           MatchLabels: map[string]string{"app": "test-deployment"},
-       }
-       testNamespaceName := "default"
-
-       fmt.Println("creating a Deployment")
-       testDeployment := appsv1.Deployment{
-           ObjectMeta: metav1.ObjectMeta{
-               Name: testDeploymentName,
-               Labels: map[string]string{"test-deployment-static": "true"},
-           },
-           Spec: appsv1.DeploymentSpec{
-               Replicas: &testDeploymentDefaultReplicas,
-               Selector: &testDeploymentLabelSelectors,
-               Template: v1.PodTemplateSpec{
-                   ObjectMeta: metav1.ObjectMeta{
-                       Labels: testDeploymentLabelSelectors.MatchLabels,
-                   },
-                   Spec: v1.PodSpec{
-                       Containers: []v1.Container{{
-                           Name: testDeploymentName,
-                           Image: testDeploymentInitialImage,
-                       }},
-                   },
-               },
-           },
-       }
-       _, err = ClientSet.AppsV1().Deployments(testNamespaceName).Create(&testDeployment)
+       // access the API to list pods
+       pods, err := ClientSet.CoreV1().Pods("").List(metav1.ListOptions{})
        if err != nil {
            fmt.Println(err)
            return
        }
-
-       fmt.Println("watching for the Deployment to be added")
-       dplmtWatchTimeoutSeconds := int64(180)
-       dplmtWatch, err := ClientSet.AppsV1().Deployments(testNamespaceName).Watch(metav1.ListOptions{LabelSelector: "test-deployment-static=true", TimeoutSeconds: &dplmtWatchTimeoutSeconds})
-       if err != nil {
-           fmt.Println(err, "Failed to setup watch on newly created Deployment")
-           return
-       }
-
-       dplmtWatchChan := dplmtWatch.ResultChan()
-       for event := range dplmtWatchChan {
-           if event.Type == watch.Added {
-               break
-           }
-       }
-       fmt.Println("waiting for all Replicas to be Ready")
-       for event := range dplmtWatchChan {
-           deployment, ok := event.Object.(*appsv1.Deployment)
-           if ok != true {
-               fmt.Println("unable to convert event.Object type")
-               return
-           }
-           if deployment.Status.AvailableReplicas == testDeploymentDefaultReplicas &&
-              deployment.Status.ReadyReplicas == testDeploymentDefaultReplicas {
-               break
-           }
-       }
-
-       fmt.Println("patching the Deployment")
-       deploymentPatch, err := json.Marshal(map[string]interface{}{
-           "metadata": map[string]interface{}{
-               "labels": map[string]string{"test-deployment": "patched"},
-           },
-           "spec": map[string]interface{}{
-               "replicas": int32(1),
-               "template": map[string]interface{}{
-                   "spec": map[string]interface{}{
-                       "containers": []map[string]interface{}{{
-                           "name": testDeploymentName,
-                           "image": testDeploymentPatchImage,
-                           "command": []string{"/bin/sleep", "100000"},
-                       }},
-                   },
-               },
-           },
-       })
-       if err != nil {
-           fmt.Println(err)
-           return
-       }
-       _, err = ClientSet.AppsV1().Deployments(testNamespaceName).Patch(testDeploymentName, types.StrategicMergePatchType, []byte(deploymentPatch))
-       if err != nil {
-            fmt.Println(err)
-            return
-       }
-
-       for event := range dplmtWatchChan {
-           if event.Type == watch.Modified {
-               break
-           }
-       }
-       fmt.Println("waiting for Replicas to scale")
-       for event := range dplmtWatchChan {
-           deployment, ok := event.Object.(*appsv1.Deployment)
-           if ok != true {
-               fmt.Println("unable to convert event.Object type")
-               return
-           }
-           if deployment.Status.AvailableReplicas == testDeploymentMinimumReplicas &&
-              deployment.Status.ReadyReplicas == testDeploymentMinimumReplicas {
-              // deployment.Status.ObservedReplicas == testDeploymentMinimumReplicas {
-               break
-           }
-       }
-
-
-       fmt.Println("listing Deployments")
-       deploymentsList, err := ClientSet.AppsV1().Deployments("").List(metav1.ListOptions{LabelSelector: "test-deployment-static=true"})
-       if err != nil {
-           fmt.Println(err)
-           return
-       }
-       foundDeployment := false
-       for _, deploymentItem := range deploymentsList.Items {
-           if deploymentItem.ObjectMeta.Name == testDeploymentName &&
-              deploymentItem.ObjectMeta.Namespace == testNamespaceName &&
-              deploymentItem.ObjectMeta.Labels["test-deployment-static"] == "true" &&
-              ,*deploymentItem.Spec.Replicas == testDeploymentMinimumReplicas &&
-              deploymentItem.Spec.Template.Spec.Containers[0].Image == testDeploymentPatchImage {
-               foundDeployment = true
-               break
-           }
-       }
-       if foundDeployment != true {
-           fmt.Println("unable to find the Deployment in list")
-           return
-       }
-
-       // TODO add updating of Deployment
-	
-       // TODO add getting of DeploymentStatus
-
-       fmt.Println("deleting the Deployment")
-       err = ClientSet.AppsV1().Deployments(testNamespaceName).DeleteCollection(&metav1.DeleteOptions{}, metav1.ListOptions{LabelSelector: "test-deployment-static=true"})
-       if err != nil {
-           fmt.Println(err)
-           return
-       }
-       for event := range dplmtWatchChan {
-           deployment, ok := event.Object.(*appsv1.Deployment)
-           if ok != true {
-               fmt.Println("unable to convert event.Object type")
-               return
-           }
-           if event.Type == watch.Deleted && deployment.ObjectMeta.Name == testDeploymentName {
-               break
-           }
-       }
+       fmt.Printf("[status] there are %d pods in the cluster\n", len(pods.Items))
 
        // write test here
        fmt.Println("[status] complete")
+
      }
    #+end_src
 
    #+RESULTS:
    #+begin_src go
-   creating a Deployment
-   watching for the Deployment to be added
-   waiting for all Replicas to be Ready
-   patching the Deployment
-   waiting for Replicas to scale
-   listing Deployments
-   &DeploymentSpec{Replicas:*1,Selector:&v1.LabelSelector{MatchLabels:map[string]string{app: test-deployment,},MatchExpressions:[]LabelSelectorRequirement{},},Template:{{      0 0001-01-01 00:00:00 +0000 UTC <nil> <nil> map[app:test-deployment] map[] [] []  []} {[] [] [{test-deployment alpine [/bin/sleep 100000] []  [] [] [] {map[] map[]} [] [] nil nil nil nil /dev/termination-log File Always nil false false false}] [] Always 0xc00043d3f0 <nil> ClusterFirst map[]   <nil>  false false false <nil> PodSecurityContext{SELinuxOptions:nil,RunAsUser:nil,RunAsNonRoot:nil,SupplementalGroups:[],FSGroup:nil,RunAsGroup:nil,Sysctls:[]Sysctl{},WindowsOptions:nil,} []   nil default-scheduler [] []  <nil> nil [] <nil> <nil> <nil> map[] []}},Strategy:DeploymentStrategy{Type:RollingUpdate,RollingUpdate:&RollingUpdateDeployment{MaxUnavailable:25%,MaxSurge:25%,},},MinReadySeconds:0,RevisionHistoryLimit:*10,Paused:false,ProgressDeadlineSeconds:*600,}
-   deleting the Deployment
+   [status] there are 20 pods in the cluster
    [status] complete
    #+end_src
 
