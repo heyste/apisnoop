@@ -6,7 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/name: auditlogger
     app.kubernetes.io/instance: auditlogger
-    app.kubernetes.io/version: "v20200923-v2020.09.23-1-gb3afc41"
+    app.kubernetes.io/version: "v20210519-0.2.0-32-g4742aeb"
 spec:
   hostname: snoopdb
   hostNetwork: true
@@ -29,7 +29,7 @@ spec:
         fsGroup: 70
         runAsGroup: 70
         runAsUser: 70
-      image: "gcr.io/k8s-staging-apisnoop/snoopdb:v20200923-v2020.09.23-1-gb3afc41"
+      image: "gcr.io/k8s-staging-apisnoop/snoopdb:v20210519-0.2.0-32-g4742aeb"
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 5432
@@ -68,7 +68,7 @@ spec:
       - name: var-run-postgresql
         mountPath: /var/run/postgresql
     - name: auditlogger
-      image: "gcr.io/k8s-staging-apisnoop/auditlogger:v20200923-v2020.09.23-1-gb3afc41"
+      image: "gcr.io/k8s-staging-apisnoop/auditlogger:v20201215-2020.10.27-101-g1d645ab"
       imagePullPolicy: IfNotPresent
       securityContext:
         allowPrivilegeEscalation: false
