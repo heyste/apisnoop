@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>APISnoop 1.21 OKRs</title>
+<meta name="author" content="ii.coop"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/theme/sky.css" id="theme"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">APISnoop 1.21 OKRs</h1><h2 class="author">ii.coop</h2><p class="date">Created: 2021-02-10 Wed 10:46</p>
+</section>
+
+<section>
+<section id="slide-org57476fb">
+<h2 id="org57476fb">v1.21</h2>
+<p>
+Our goal is to not make radical changes to process or approach, but iterate on our working methods to increase velocity and output in a stable, consistent way.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org610c8a8">
+<h3 id="org610c8a8"><b><b>Increase Stable Test Coverage</b></b></h3>
+<div class="outline-text-3" id="text-org610c8a8">
+</div>
+</section>
+<section id="slide-orga9a37b6">
+<h4 id="orga9a37b6"><b><b>KR1 increase new conformant stable endpoints</b></b></h4>
+<p>
+In spite of increasing technical challenges:
+</p>
+<ul>
+<li>Goal: 3/30   - Stretch Goal: 40</li>
+<li>Status: +3 (Merged):
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/97327">Read Status, Patch &amp; List APIService +3</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org0f1ca0b">
+<h4 id="org0f1ca0b"><b><b>KR2 clean-up technical debt</b></b></h4>
+<ul>
+<li>Goal: Clear <a href="https://apisnoop.cncf.io/conformance-progress#coverage-by-release">debt back to 1.9</a></li>
+
+</ul>
+<p>
+6 months of debt to erase!
+  1.11 +2: {read,patch}ApiregistrationStatus
+</p>
+<ul>
+<li>1.10 +5: {replace,patch,list,&#x2026;}Apiregistration</li>
+<li>4 Endpoints to go</li>
+<li>Still in progress, but not there yet.</li>
+
+</ul>
+</section>
+<section id="slide-org52c67b3">
+<h4 id="org52c67b3">What is in the pipeline</h4>
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/95503">PodProxyWithPath &amp; ServiceProxyWithPath + 12</a>
+Promotion PR to merge next week</li>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/98018">Service Status Life Cycle +2</a>
+Ready for approval</li>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/98126">Update: StatefulSet Replica scaling- Patch Scale +1</a>
+Ready of approval to merge into conformance</li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/90877">AppsV1DaemonSet resource lifecycle  +5</a> a work in progress</li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/98920">Write Read, Replace and Patch ReplicaSetScale +3</a>
+New issue to address Apps endpoints in 1.9</li>
+
+</ul>
+</section>
+<section id="slide-orge9fed27">
+<h4 id="orge9fed27">Apps endpoints</h4>
+<ul>
+<li>All the 1.9 Technical debt is in the Apps API group</li>
+<li>An <a href="https://github.com/kubernetes/kubernetes/issues/98640">Umbrella Issue</a> was created and we are working with SIG App to erase that debt</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2cef0aa">
+<h3 id="org2cef0aa"><b><b>Release Blocking k/k Job</b></b></h3>
+<div class="outline-text-3" id="text-org2cef0aa">
+</div>
+</section>
+<section id="slide-org8fb87c6">
+<h4 id="org8fb87c6"><b><b>Progress</b></b></h4>
+<ul>
+<li>Gate keeping for new untested endpoints are working
+<ul>
+<li>3 New untested endpoints detected in 1.21</li>
+<li>These were promoted to <a href="https://github.com/kubernetes/kubernetes/pull/97276">support Alpha features</a></li>
+<li>The endpoints was mark as "Not eligible for conformance yet"</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org6abd9aa">
+<h4 id="org6abd9aa">Taking ownership to the community</h4>
+<ul>
+<li>ii currently manage the Ineligible endpoints list</li>
+<li>This is done via SQL queries in APISnoop</li>
+<li>We proposed in SIG Architecture to move it
+to the community</li>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/98677">PR  #98677</a> will make it happen</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org0338800">
+<h3 id="org0338800"><b><b>Other Important News</b></b></h3>
+<div class="outline-text-3" id="text-org0338800">
+</div>
+</section>
+<section id="slide-org070449e">
+<h4 id="org070449e"><b><b>Timelines</b></b></h4>
+<ul>
+<li>1.21 <a href="https://github.com/kubernetes/sig-release/tree/master/releases/release-1.21#timeline">Time line is out</a></li>
+<li>14 week cycle with Test freeze on 24 March</li>
+
+</ul>
+</section>
+<section id="slide-org572dced">
+<h4 id="org572dced"><b><b>Conformance Gate</b></b></h4>
+<ul>
+<li>We confirmed that Taylor can remove labels</li>
+<li>Removing labels trigger automatic relabel of the PR</li>
+
+</ul>
+</section>
+<section id="slide-org028e24d">
+<h4 id="org028e24d">The Conformance goal for 2021</h4>
+<ul>
+<li>Increase Stable Test Coverage for Kubernetes for 2021
+<ul>
+<li>Less than 75 untested eligible stable GA endpoints remaining.</li>
+<li>Ensure no new technical debt is incurred.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org47a790e">
+<h4 id="org47a790e">KubeCon + CloudNativeCon Europe</h4>
+<p>
+We have again submitted a proposal to
+present a Maintainer Track Sessions
+on Conformance progress and it's
+importance.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org1899d91">
+<h3 id="org1899d91"><b>* Blockers for 1.21*</b></h3>
+<ul>
+<li>Keep same goals as 1.20</li>
+<li>Know that Endpoints get tougher</li>
+<li>Status endpoints is currently
+a big community topic</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org57014b7">
+<h3 id="org57014b7"><b><b>Questions / Feedback</b></b></h3>
+<p>
+In what other ways can we support the CNCF?
+</p>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+margin: 0.10,
+minScale: 1.00,
+maxScale: 3.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // see README of reveal.js for options
+transitionSpeed: '1',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+},
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'https://cdn.socket.io/socket.io-1.3.5.js', async: true },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/multiplex/master.js', async: true }]
+
+});
+</script>
+</body>
+</html>

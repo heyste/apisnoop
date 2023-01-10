@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>APISnoop 1.21 OKRs</title>
+<meta name="author" content="ii.coop"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/theme/sky.css" id="theme"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">APISnoop 1.21 OKRs</h1><h2 class="author">ii.coop</h2><p class="date">Created: 2021-01-14 Thu 08:08</p>
+</section>
+
+<section>
+<section id="slide-orgdcd6938">
+<h2 id="orgdcd6938">v1.21</h2>
+<p>
+Our goal is to not make radical changes to process or approach, but iterate on our working methods to increase velocity and output in a stable, consistent way.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org6a86ef8">
+<h3 id="org6a86ef8"><b><b>Increase Stable Test Coverage</b></b></h3>
+<div class="outline-text-3" id="text-org6a86ef8">
+</div>
+</section>
+<section id="slide-org95fd8b2">
+<h4 id="org95fd8b2"><b><b>KR1 increase new conformant stable endpoints</b></b></h4>
+<p>
+In spite of increasing technical challenges:
+</p>
+<ul>
+<li>Goal: 3/30   - Stretch Goal: 40</li>
+<li>Status: +3 (Merged):
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/97327">Read Status, Patch &amp; List APIService +3</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orga79341f">
+<h4 id="orga79341f"><b><b>KR2 clean-up technical debt</b></b></h4>
+<ul>
+<li>Goal: Clear <a href="https://apisnoop.cncf.io/conformance-progress#coverage-by-release">debt back to 1.9</a></li>
+
+</ul>
+<p>
+6 months of debt to erase!
+</p>
+<ul>
+<li>1.11 +2: {read,patch}ApiregistrationStatus</li>
+<li>1.10 +5: {replace,patch,list,&#x2026;}Apiregistration</li>
+<li>3 of 7 endpoints are coved by our first merged test for 1.21</li>
+<li>4 Endpoints to go, looking good!</li>
+
+</ul>
+</section>
+<section id="slide-orge8e6c72">
+<h4 id="orge8e6c72">What is in the pipeline</h4>
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/95503">PodProxyWithPath &amp; ServiceProxyWithPath test - + 12</a>
+Dependent on <a href="https://prow.k8s.io/job-history/gs/kubernetes-jenkins/logs/post-kubernetes-push-e2e-test-images">Image build</a> to be updated</li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/90877">AppsV1DaemonSet resource lifecycle test - +6</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/pull/98018">Service Status Life Cycle test - +2</a></li>
+<li>All the 1.9 Technical debt is in the Apps API group</li>
+<li>We are working with SIG App to erase that debt</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org093ac12">
+<h3 id="org093ac12"><b><b>Release Blocking k/k Job</b></b></h3>
+<div class="outline-text-3" id="text-org093ac12">
+</div>
+</section>
+<section id="slide-org380354d">
+<h4 id="org380354d"><b><b>Progress</b></b></h4>
+<ul>
+<li>Our job <a href="https://github.com/kubernetes/test-infra/pull/19173">k/test-infra#19173</a>
+<ul>
+<li>is running on <a href="https://prow.k8s.io/?job=apisnoop-conformance-gate">prow.k8s.io</a></li>
+<li>is catching untested new endpoints</li>
+<li>3 New untested endpoints detected in 1.21</li>
+<li>We are engaging the community ensure promotion with conformance tests</li>
+<li>further automation is in progress</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgaa2de39">
+<h3 id="orgaa2de39"><b><b>Other Important News</b></b></h3>
+<div class="outline-text-3" id="text-orgaa2de39">
+</div>
+</section>
+<section id="slide-org4149a90">
+<h4 id="org4149a90"><b><b>Timelines</b></b></h4>
+<ul>
+<li>1.21 <a href="https://hackmd.io/@1ZEI8TYqTDWogQGLAiExjw/ry-m4YYcP">still under discussion</a></li>
+<li>Consideration between 3 or 4 releases per year ongoing</li>
+<li>Should be agreed shortly</li>
+
+</ul>
+</section>
+<section id="slide-org5d8deaa">
+<h4 id="org5d8deaa"><b><b>Conformance Gate</b></b></h4>
+<ul>
+<li>cncf/k8s-conformance gate is running
+<ul>
+<li>Looks <a href="https://github.com/cncf/k8s-conformance/pulls?q=is%3Apr+is%3Aclosed">like it's working</a></li>
+<li>Discussion point:
+Labels and removing labels</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge9aea01">
+<h3 id="orge9aea01"><b><b>Looking forward to 1.21</b></b></h3>
+<ul>
+<li>No radical changes</li>
+<li>Keep same goals as 1.20</li>
+<li>Know that Endpoints get tougher</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org34e3b88">
+<h3 id="org34e3b88"><b><b>Questions / Feedback</b></b></h3>
+<p>
+In what other ways can we support the CNCF?
+</p>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+margin: 0.10,
+minScale: 1.00,
+maxScale: 3.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // see README of reveal.js for options
+transitionSpeed: '1',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+},
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'https://cdn.socket.io/socket.io-1.3.5.js', async: true },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.9.2/plugin/multiplex/master.js', async: true }]
+
+});
+</script>
+</body>
+</html>

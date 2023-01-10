@@ -1,0 +1,757 @@
+[
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1DeleteNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1DeleteNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1GetNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1GetNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1HeadNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1HeadNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1OptionsNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1OptionsNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PatchNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PatchNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PostNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PostNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PutNodeProxy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/95930",
+        "reason": "Unable to be tested, and likely soon deprecated",
+        "endpoint": "connectCoreV1PutNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/112657#issuecomment-1265441626",
+        "reason": "Endpoint likely to be deprecated",
+        "endpoint": "createAuthorizationV1SelfSubjectRulesReview"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "createAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "createAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/47041",
+        "reason": "Endpoint was deprecated in 1.7",
+        "endpoint": "createCoreV1NamespacedBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/80770",
+        "reason": "optional feature",
+        "endpoint": "createCoreV1NamespacedServiceAccountToken"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L36",
+        "reason": "uses kubelet api",
+        "endpoint": "createCoreV1Node"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "createNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "createRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "createRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "createRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "createRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "createStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "deleteAutoscalingV1CollectionNamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "deleteAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "deleteAutoscalingV2CollectionNamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "deleteAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteCoreV1CollectionNamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/109379",
+        "reason": "Kubernetes distribution would reasonably not allow this action via the API",
+        "endpoint": "deleteCoreV1CollectionNode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteCoreV1CollectionPersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L36",
+        "reason": "uses kubelet api",
+        "endpoint": "deleteCoreV1Node"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "deleteNetworkingV1CollectionNamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "deleteNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1CollectionClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1CollectionClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1CollectionNamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1CollectionNamespacedRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "deleteRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CollectionCSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CollectionCSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CollectionStorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CollectionVolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "deleteStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/enhancements/blob/f16c4c7f1c9e28a3cc4bb4d0e6503efea2ae7987/keps/sig-api-machinery/20190228-priority-and-fairness.md",
+        "reason": "depends on alpha feature",
+        "endpoint": "getFlowcontrolApiserverAPIGroup"
+    },
+    {
+        "link": "https://github.com/kubernetes/enhancements/blob/master/keps/sig-api-machinery/20190802-dynamic-coordinated-storage-version.md",
+        "reason": "Not eligible for conformance yet",
+        "endpoint": "getInternalApiserverAPIGroup"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "getRbacAuthorizationAPIGroup"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "getRbacAuthorizationV1APIResources"
+    },
+    {
+        "link": "https://github.com/kubernetes/enhancements/blob/master/keps/sig-node/3063-dynamic-resource-allocation/kep.yaml#L29-L33",
+        "reason": "still an alpha feature plan for GA 1.31",
+        "endpoint": "getResourceAPIGroup"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "getStorageAPIGroup"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "getStorageV1APIResources"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "listAutoscalingV1HorizontalPodAutoscalerForAllNamespaces"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "listAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "listAutoscalingV2HorizontalPodAutoscalerForAllNamespaces"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "listAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L69",
+        "reason": "pending deprecation",
+        "endpoint": "listCoreV1ComponentStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listCoreV1PersistentVolumeClaimForAllNamespaces"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "listNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "listNetworkingV1NetworkPolicyForAllNamespaces"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1RoleBindingForAllNamespaces"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "listRbacAuthorizationV1RoleForAllNamespaces"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "listStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/108675",
+        "reason": "optional feature",
+        "endpoint": "logFileHandler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/108675",
+        "reason": "optional feature",
+        "endpoint": "logFileListHandler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "patchAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "patchAutoscalingV1NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "patchAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "patchAutoscalingV2NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchCoreV1NamespacedPersistentVolumeClaimStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/97276",
+        "reason": "Not eligible for conformance yet",
+        "endpoint": "patchCoreV1NamespacedPodEphemeralcontainers"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchCoreV1PersistentVolumeStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "patchNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/107963",
+        "reason": "endpoints is currently feature gated and and will only receive e2e & conformance test in 1.25",
+        "endpoint": "patchNetworkingV1NamespacedNetworkPolicyStatus"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "patchRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "patchRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "patchRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "patchRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "patchStorageV1VolumeAttachmentStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "readAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "readAutoscalingV1NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "readAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "readAutoscalingV2NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L69",
+        "reason": "pending deprecation",
+        "endpoint": "readCoreV1ComponentStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readCoreV1NamespacedPersistentVolumeClaimStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/97276",
+        "reason": "Not eligible for conformance yet",
+        "endpoint": "readCoreV1NamespacedPodEphemeralcontainers"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/109379",
+        "reason": "Kubernetes distribution would reasonably not allow this action via the API",
+        "endpoint": "readCoreV1NodeStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readCoreV1PersistentVolumeStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "readNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/107963",
+        "reason": "endpoints is currently feature gated and and will only receive e2e & conformance test in 1.25",
+        "endpoint": "readNetworkingV1NamespacedNetworkPolicyStatus"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "readRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "readRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "readRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "readRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "readStorageV1VolumeAttachmentStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "replaceAutoscalingV1NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "replaceAutoscalingV1NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "replaceAutoscalingV2NamespacedHorizontalPodAutoscaler"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/106595#issuecomment-1006015756",
+        "reason": "optional feature",
+        "endpoint": "replaceAutoscalingV2NamespacedHorizontalPodAutoscalerStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceCoreV1NamespacedPersistentVolumeClaim"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceCoreV1NamespacedPersistentVolumeClaimStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/97276",
+        "reason": "Not eligible for conformance yet",
+        "endpoint": "replaceCoreV1NamespacedPodEphemeralcontainers"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/109379",
+        "reason": "Kubernetes distribution would reasonably not allow this action via the API",
+        "endpoint": "replaceCoreV1NodeStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceCoreV1PersistentVolume"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceCoreV1PersistentVolumeStatus"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/100149#issuecomment-800501953",
+        "reason": "optional feature",
+        "endpoint": "replaceNetworkingV1NamespacedNetworkPolicy"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/pull/107963",
+        "reason": "endpoints is currently feature gated and and will only receive e2e & conformance test in 1.25",
+        "endpoint": "replaceNetworkingV1NamespacedNetworkPolicyStatus"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "replaceRbacAuthorizationV1ClusterRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "replaceRbacAuthorizationV1ClusterRoleBinding"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "replaceRbacAuthorizationV1NamespacedRole"
+    },
+    {
+        "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+        "reason": "optional feature",
+        "endpoint": "replaceRbacAuthorizationV1NamespacedRoleBinding"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceStorageV1CSIDriver"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceStorageV1CSINode"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceStorageV1StorageClass"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceStorageV1VolumeAttachment"
+    },
+    {
+        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
+        "reason": "vendor specific feature",
+        "endpoint": "replaceStorageV1VolumeAttachmentStatus"
+    }
+]
