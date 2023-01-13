@@ -26,6 +26,7 @@ kubeadmConfigPatches:
 nodes:
   # Second entry under nodes
   - role: control-plane
+    image: kindest/node:v1.26.0
     extraMounts:
       - hostPath: audit
         containerPath: /etc/kubernetes/pki/audit
@@ -47,6 +48,7 @@ nodes:
     #   hostPort: 10350
 
   - role: worker
+    image: kindest/node:v1.26.0
     extraMounts:
       # - containerPath: /var/local-path-provisioner
       #   hostPath: /tmp/workspace/pvcs
