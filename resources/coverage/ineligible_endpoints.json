@@ -10,6 +10,16 @@
         "endpoint": "connectCoreV1DeleteNodeProxyWithPath"
     },
     {
+        "link": "https://github.com/kubernetes/kubernetes/issues/112778#issuecomment-1427995711",
+        "reason": "Endpoint likely to be deprecated",
+        "endpoint": "connectCoreV1GetNamespacedPodAttach"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/112778#issuecomment-1427995711",
+        "reason": "Explicitly designed to be a debug feature",
+        "endpoint": "connectCoreV1GetNamespacedPodPortforward"
+    },
+    {
         "link": "https://github.com/kubernetes/kubernetes/issues/95930",
         "reason": "Unable to be tested, and likely soon deprecated",
         "endpoint": "connectCoreV1GetNodeProxy"
@@ -48,6 +58,11 @@
         "link": "https://github.com/kubernetes/kubernetes/issues/95930",
         "reason": "Unable to be tested, and likely soon deprecated",
         "endpoint": "connectCoreV1PatchNodeProxyWithPath"
+    },
+    {
+        "link": "https://github.com/kubernetes/kubernetes/issues/112778#issuecomment-1427995711",
+        "reason": "Explicitly designed to be a debug feature",
+        "endpoint": "connectCoreV1PostNamespacedPodAttach"
     },
     {
         "link": "https://github.com/kubernetes/kubernetes/issues/95930",
@@ -133,11 +148,6 @@
         "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
         "reason": "optional feature",
         "endpoint": "createRbacAuthorizationV1NamespacedRoleBinding"
-    },
-    {
-        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
-        "reason": "vendor specific feature",
-        "endpoint": "createStorageV1CSIDriver"
     },
     {
         "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
@@ -277,11 +287,6 @@
     {
         "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
         "reason": "vendor specific feature",
-        "endpoint": "deleteStorageV1CSIDriver"
-    },
-    {
-        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
-        "reason": "vendor specific feature",
         "endpoint": "deleteStorageV1CSINode"
     },
     {
@@ -408,11 +413,6 @@
         "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
         "reason": "optional feature",
         "endpoint": "listRbacAuthorizationV1RoleForAllNamespaces"
-    },
-    {
-        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
-        "reason": "vendor specific feature",
-        "endpoint": "listStorageV1CSIDriver"
     },
     {
         "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
@@ -623,11 +623,6 @@
         "link": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
         "reason": "optional feature",
         "endpoint": "readRbacAuthorizationV1NamespacedRoleBinding"
-    },
-    {
-        "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
-        "reason": "vendor specific feature",
-        "endpoint": "readStorageV1CSIDriver"
     },
     {
         "link": "https://github.com/kubernetes/community/blame/master/contributors/devel/sig-architecture/conformance-tests.md#L64",
