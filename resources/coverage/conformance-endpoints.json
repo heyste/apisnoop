@@ -124,16 +124,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getAutoscalingV2APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.23.0"
     },
     {
@@ -348,12 +342,6 @@
     {
         "tests": [
             {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
-            {
                 "file": "test/e2e/network/endpointslice.go",
                 "release": "1.21.0",
                 "codename": "[sig-network] EndpointSlice should support creating EndpointSlice API operations [Conformance]",
@@ -379,16 +367,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getPolicyV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.21.0"
     },
     {
@@ -906,12 +888,6 @@
     {
         "tests": [
             {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
-            {
                 "file": "test/e2e/common/node/runtimeclass.go",
                 "release": "1.20.0",
                 "codename": "[sig-node] RuntimeClass  should support RuntimeClasses API operations [Conformance]",
@@ -1153,12 +1129,6 @@
     {
         "tests": [
             {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
-            {
                 "file": "test/e2e/auth/certificates.go",
                 "release": "1.19.0",
                 "codename": "[sig-auth] Certificates API [Privileged:ClusterAdmin] should support CSR API operations [Conformance]",
@@ -1172,16 +1142,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getEventsV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.19.0"
     },
     {
@@ -1319,8 +1283,7 @@
                 "release": "1.19.0",
                 "codename": "[sig-instrumentation] Events API should ensure that an event can be fetched, patched, deleted, and listed [Conformance]",
                 "testname": "New Event resource lifecycle, testing a single event"
-            },
-            null
+            }
         ],
         "endpoint": "patchEventsV1NamespacedEvent",
         "tested_release": "1.19.0",
@@ -1822,6 +1785,36 @@
                 "testname": "Custom Resource Definition, create"
             },
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny custom resource creation, update and deletion [Conformance]",
@@ -2131,12 +2124,6 @@
     {
         "tests": [
             {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
-            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]",
@@ -2150,12 +2137,6 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             {
                 "file": "test/e2e/apimachinery/custom_resource_definition.go",
                 "release": "1.16.0",
@@ -2538,16 +2519,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getCoordinationV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.14.0"
     },
     {
@@ -2571,16 +2546,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getSchedulingV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.14.0"
     },
     {
@@ -2788,16 +2757,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getApiregistrationV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.10.0"
     },
     {
@@ -2957,6 +2920,18 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert from CR v1 to CR v2 [Conformance]",
                 "testname": "Custom Resource Definition Conversion Webhook, conversion custom resource"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
             },
             {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
@@ -3416,6 +3391,48 @@
                 "testname": "Custom Resource Definition Conversion Webhook, conversion custom resource"
             },
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
                 "release": "1.9.0",
                 "codename": "[sig-api-machinery] Garbage collector should delete RS created by deployment when not orphaning [Conformance]",
@@ -3601,16 +3618,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getAppsV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.9.0"
     },
     {
@@ -4671,7 +4682,8 @@
                 "release": "1.21.0",
                 "codename": "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]",
                 "testname": "ReplicaSet, completes the scaling of a ReplicaSet subresource"
-            }
+            },
+            null
         ],
         "endpoint": "readAppsV1NamespacedReplicaSetScale",
         "tested_release": "1.21.0",
@@ -5206,12 +5218,6 @@
     {
         "tests": [
             {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
-            {
                 "file": "test/e2e/network/ingressclass.go",
                 "release": "1.19.0",
                 "codename": "[sig-network] IngressClass API  should support creating IngressClass API operations [Conformance]",
@@ -5285,30 +5291,18 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getAuthenticationV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.6.0"
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getAuthorizationV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.6.0"
     },
     {
@@ -5999,6 +5993,48 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
             },
             {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
@@ -6719,6 +6755,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -8631,6 +8679,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -10963,6 +11023,48 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
                 "release": "1.9.0",
                 "codename": "[sig-api-machinery] Garbage collector should delete pods created by rc when not orphaning [Conformance]",
@@ -11681,6 +11783,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -13209,6 +13323,48 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
                 "release": "1.9.0",
                 "codename": "[sig-api-machinery] Garbage collector should not be blocked by dependency circle [Conformance]",
@@ -13285,6 +13441,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -14673,16 +14841,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getAutoscalingV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.5.0"
     },
     {
@@ -14700,16 +14862,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getBatchV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.5.0"
     },
     {
@@ -14809,16 +14965,10 @@
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/apimachinery/aggregator.go",
-                "release": "1.27.0",
-                "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
-                "testname": "aggregator-supports-the-sample-apiserver"
-            },
             null
         ],
         "endpoint": "getCoreV1APIResources",
-        "tested_release": "1.27.0",
+        "tested_release": null,
         "promotion_release": "1.5.0"
     },
     {
@@ -15125,6 +15275,48 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
             },
             {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
@@ -15845,6 +16037,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -18213,6 +18417,48 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
                 "release": "1.9.0",
                 "codename": "[sig-api-machinery] Garbage collector should delete pods created by rc when not orphaning [Conformance]",
@@ -18931,6 +19177,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -20423,6 +20681,48 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR no validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, unknown fields CR fails validation"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should create/apply a valid CR for CRD with validation schema [Conformance]",
+                "testname": "Server side field validation, valid CR with validation schema"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect duplicates in a CR when preserving unknown fields [Conformance]",
+                "testname": "Server side field validation, CR duplicates"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown and duplicate fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed object"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields in both the root and embedded object of a CR [Conformance]",
+                "testname": "Server side field validation, unknown metadata"
+            },
+            {
+                "file": "test/e2e/apimachinery/field_validation.go",
+                "release": "1.27.0",
+                "codename": "[sig-api-machinery] FieldValidation should detect unknown metadata fields of a typed object [Conformance]",
+                "testname": "Server side field validation, typed unknown metadata"
+            },
+            {
                 "file": "test/e2e/apimachinery/garbage_collector.go",
                 "release": "1.9.0",
                 "codename": "[sig-api-machinery] Garbage collector should delete pods created by rc when not orphaning [Conformance]",
@@ -21141,6 +21441,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
@@ -23635,6 +23947,18 @@
                 "release": "1.18.0",
                 "codename": "[sig-node] Probing container should *not* be restarted with a tcp:8080 liveness probe [NodeConformance] [Conformance]",
                 "testname": "Pod liveness probe, using tcp socket, no restart"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, failure"
+            },
+            {
+                "file": "test/e2e/common/node/container_probe.go",
+                "release": "1.23.0",
+                "codename": "[sig-node] Probing container should *not* be restarted with a GRPC liveness probe [NodeConformance] [Conformance]",
+                "testname": "Pod liveness probe, using grpc call, success"
             },
             {
                 "file": "test/e2e/common/node/container_probe.go",
