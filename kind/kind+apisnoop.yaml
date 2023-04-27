@@ -26,6 +26,7 @@ kubeadmConfigPatches:
 nodes:
   # Second entry under nodes
   - role: control-plane
+    image: kindest/node:v1.27.1@sha256:f957f0636f30b105e15ed00932b25d175eaf08d5d11735e8d6ec73325ebd5b02
     extraMounts:
       - hostPath: audit
         containerPath: /etc/kubernetes/pki/audit
@@ -33,24 +34,14 @@ nodes:
       - hostPath: manifests/apisnoop.yaml
         containerPath: /etc/kubernetes/manifests/apisnoop.yaml
         readOnly: True
-    # we want to reach psql from our host
+    # we want to use psql from our host
     extraPortMappings:
       - containerPort: 5432
         hostPort: 5432
-    # - containerPort: 80
-    #   hostPort: 80
-    # - containerPort: 443
-    #   hostPort: 443
-    # - containerPort: 6443
-    #   hostPort: 6443
-    # - containerPort: 10350
-    #   hostPort: 10350
 
   - role: worker
+    image: kindest/node:v1.27.1@sha256:f957f0636f30b105e15ed00932b25d175eaf08d5d11735e8d6ec73325ebd5b02
     extraMounts:
-      # - containerPath: /var/local-path-provisioner
-      #   hostPath: /tmp/workspace/pvcs
-      #   readOnly: False
       - containerPath: /var/run/docker.sock
         hostPath: /var/run/docker.sock
         readOnly: False
