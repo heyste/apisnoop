@@ -92,14 +92,6 @@
     },
     {
         "tests": [
-            null
-        ],
-        "endpoint": "readNetworkingV1NamespacedNetworkPolicyStatus",
-        "tested_release": null,
-        "promotion_release": "1.24.0"
-    },
-    {
-        "tests": [
             {
                 "file": "test/e2e/storage/csistoragecapacity.go",
                 "release": "1.24.0",
@@ -109,14 +101,6 @@
         ],
         "endpoint": "readStorageV1NamespacedCSIStorageCapacity",
         "tested_release": "1.24.0",
-        "promotion_release": "1.24.0"
-    },
-    {
-        "tests": [
-            null
-        ],
-        "endpoint": "replaceNetworkingV1NamespacedNetworkPolicyStatus",
-        "tested_release": null,
         "promotion_release": "1.24.0"
     },
     {
@@ -4925,7 +4909,8 @@
                 "release": "1.21.0",
                 "codename": "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]",
                 "testname": "ReplicaSet, completes the scaling of a ReplicaSet subresource"
-            }
+            },
+            null
         ],
         "endpoint": "readAppsV1NamespacedReplicaSetScale",
         "tested_release": "1.21.0",
@@ -13591,6 +13576,12 @@
                 "testname": "Admission webhook, honor timeout"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.16.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate configmap [Conformance]",
+                "testname": "Admission webhook, ordered mutation"
+            },
+            {
                 "file": "test/e2e/auth/service_accounts.go",
                 "release": "1.21.0",
                 "codename": "[sig-auth] ServiceAccounts should guarantee kube-root-ca.crt exist in any namespace [Conformance]",
@@ -15183,7 +15174,8 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
-            }
+            },
+            null
         ],
         "endpoint": "getAuthenticationAPIGroup",
         "tested_release": "1.19.0",
@@ -26780,14 +26772,6 @@
         "tests": [
             null
         ],
-        "endpoint": "readCoreV1NodeStatus",
-        "tested_release": null,
-        "promotion_release": "1.5.0"
-    },
-    {
-        "tests": [
-            null
-        ],
         "endpoint": "readCoreV1PersistentVolume",
         "tested_release": null,
         "promotion_release": "1.5.0"
@@ -27076,7 +27060,8 @@
                 "release": "1.20.0",
                 "codename": "[sig-node] Pods should run through the lifecycle of Pods and PodStatus [Conformance]",
                 "testname": "Pods, completes the lifecycle of a Pod and the PodStatus"
-            }
+            },
+            null
         ],
         "endpoint": "replaceCoreV1NamespacedPodStatus",
         "tested_release": "1.10.0",
@@ -27310,14 +27295,6 @@
         ],
         "endpoint": "replaceCoreV1Node",
         "tested_release": "1.9.0",
-        "promotion_release": "1.5.0"
-    },
-    {
-        "tests": [
-            null
-        ],
-        "endpoint": "replaceCoreV1NodeStatus",
-        "tested_release": null,
         "promotion_release": "1.5.0"
     },
     {
