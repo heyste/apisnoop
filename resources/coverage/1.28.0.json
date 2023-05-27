@@ -418,12 +418,12 @@
             "promotion_release": null
         },
         {
-            "file": null,
-            "test": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+            "file": "test/e2e/apimachinery/discovery.go",
+            "test": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
             "release": "1.28.0",
-            "testname": null,
-            "conformance_test": false,
-            "promotion_release": null
+            "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup",
+            "conformance_test": true,
+            "promotion_release": "1.28.0"
         },
         {
             "file": "test/e2e/apimachinery/discovery.go",
@@ -3562,6 +3562,14 @@
             "promotion_release": "1.9.0"
         },
         {
+            "file": null,
+            "test": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
+            "release": "1.28.0",
+            "testname": null,
+            "conformance_test": false,
+            "promotion_release": null
+        },
+        {
             "file": "test/e2e/common/node/ephemeral_containers.go",
             "test": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
             "release": "1.28.0",
@@ -4680,6 +4688,14 @@
             "testname": "ConfigMap Volume, update",
             "conformance_test": true,
             "promotion_release": "1.9.0"
+        },
+        {
+            "file": null,
+            "test": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
+            "release": "1.28.0",
+            "testname": null,
+            "conformance_test": false,
+            "promotion_release": null
         },
         {
             "file": "test/e2e/storage/csi_inline.go",
@@ -7756,9 +7772,9 @@
     ],
     "release": "1.28.0",
     "sources": [
-        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-audit-kind-conformance/1658469868380360704",
-        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-kubernetes-e2e-gci-gce/1658505604819324928",
-        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-kubernetes-gce-conformance-latest/1658464080869986304"
+        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-audit-kind-conformance/1662372740956426240",
+        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-kubernetes-e2e-gci-gce/1662409864158121984",
+        "https://prow.k8s.io/view/gcs/kubernetes-jenkins/logs/ci-kubernetes-gce-conformance-latest/1662368461742936064"
     ],
     "endpoints": [
         {
@@ -8395,6 +8411,7 @@
                 "[sig-network] Networking Granular Checks: Services should update endpoints: http",
                 "[sig-network] Networking Granular Checks: Services should update endpoints: udp",
                 "[sig-node] crictl should be able to run crictl on the node",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] KubeletManagedEtcHosts should test kubelet managed /etc/hosts file [LinuxOnly] [NodeConformance] [Conformance]",
                 "[sig-node] Mount propagation should propagate mounts within defined scopes",
@@ -9507,7 +9524,7 @@
                 "[sig-api-machinery] CustomResourceValidationRules [Privileged:ClusterAdmin] MUST NOT fail validation for create of a custom resource that satisfies the x-kubernetes-validations rules",
                 "[sig-api-machinery] Discovery Custom resource should have storage version hash",
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
@@ -9900,6 +9917,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -10040,6 +10058,7 @@
                 "[sig-storage] ConfigMap should be consumable in multiple volumes in the same pod [NodeConformance] [Conformance]",
                 "[sig-storage] ConfigMap should be immutable if `immutable` field is set [Conformance]",
                 "[sig-storage] ConfigMap updates should be reflected in volume [NodeConformance] [Conformance]",
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support CSIVolumeSource in Pod API [Conformance]",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -10970,6 +10989,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -12689,6 +12709,7 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -13983,7 +14004,7 @@
                 "[sig-api-machinery] CustomResourceValidationRules [Privileged:ClusterAdmin] MUST NOT fail validation for create of a custom resource that satisfies the x-kubernetes-validations rules",
                 "[sig-api-machinery] Discovery Custom resource should have storage version hash",
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
@@ -14376,6 +14397,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -14516,6 +14538,7 @@
                 "[sig-storage] ConfigMap should be consumable in multiple volumes in the same pod [NodeConformance] [Conformance]",
                 "[sig-storage] ConfigMap should be immutable if `immutable` field is set [Conformance]",
                 "[sig-storage] ConfigMap updates should be reflected in volume [NodeConformance] [Conformance]",
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support CSIVolumeSource in Pod API [Conformance]",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -16962,10 +16985,10 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
-                null
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver"
             ],
             "action": "deletecollection",
-            "tested": false,
+            "tested": true,
             "release": "1.28.0",
             "version": "v1",
             "category": "storage",
@@ -17048,6 +17071,7 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -17347,7 +17371,7 @@
             "level": "stable",
             "tests": [
                 "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17384,7 +17408,7 @@
             "level": "stable",
             "tests": [
                 "[sig-api-machinery] CustomResourceDefinition resources [Privileged:ClusterAdmin] should include custom resource definition resources in discovery documents [Conformance]",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17419,7 +17443,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17428,7 +17452,7 @@
             "version": null,
             "category": "apiregistration",
             "endpoint": "getApiregistrationV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17489,7 +17513,7 @@
             "level": "stable",
             "tests": [
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17498,7 +17522,7 @@
             "version": null,
             "category": "apps",
             "endpoint": "getAppsV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17525,7 +17549,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-auth] SelfSubjectReview testing SSR in different API groups authentication/v1",
                 null
             ],
@@ -17535,7 +17559,7 @@
             "version": null,
             "category": "authentication",
             "endpoint": "getAuthenticationV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17561,7 +17585,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17570,7 +17594,7 @@
             "version": null,
             "category": "authorization",
             "endpoint": "getAuthorizationV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17596,7 +17620,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17605,7 +17629,7 @@
             "version": null,
             "category": "autoscaling",
             "endpoint": "getAutoscalingV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17614,7 +17638,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17623,7 +17647,7 @@
             "version": null,
             "category": "autoscaling",
             "endpoint": "getAutoscalingV2APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17649,7 +17673,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17658,7 +17682,7 @@
             "version": null,
             "category": "batch",
             "endpoint": "getBatchV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17685,7 +17709,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-auth] Certificates API [Privileged:ClusterAdmin] should support CSR API operations [Conformance]",
                 null
             ],
@@ -17705,6 +17729,7 @@
             "level": "stable",
             "tests": [
                 "",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] Servers with support for Table transformation should return a 406 for a backend which does not implement metadata [Conformance]",
                 "[sig-api-machinery] server version should find the server version [Conformance]",
@@ -17742,7 +17767,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17751,7 +17776,7 @@
             "version": null,
             "category": "coordination",
             "endpoint": "getCoordinationV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17792,7 +17817,7 @@
             "level": "stable",
             "tests": [
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17801,7 +17826,7 @@
             "version": null,
             "category": "core",
             "endpoint": "getCoreV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17828,7 +17853,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-network] Conntrack should be able to preserve UDP traffic when initial unready endpoints get ready",
                 "[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a ClusterIP service",
                 "[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a NodePort service",
@@ -17886,7 +17911,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -17895,7 +17920,7 @@
             "version": null,
             "category": "events",
             "endpoint": "getEventsV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -17959,7 +17984,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-network] Ingress API should support creating Ingress API operations [Conformance]",
                 "[sig-network] IngressClass API  should support creating IngressClass API operations [Conformance]",
                 "[sig-network] Netpol API should support creating NetworkPolicy API operations",
@@ -17999,7 +18024,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-node] RuntimeClass  should support RuntimeClasses API operations [Conformance]",
                 null
             ],
@@ -18035,7 +18060,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -18044,7 +18069,7 @@
             "version": null,
             "category": "policy",
             "endpoint": "getPolicyV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -18121,7 +18146,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 null
             ],
             "action": null,
@@ -18130,7 +18155,7 @@
             "version": null,
             "category": "scheduling",
             "endpoint": "getSchedulingV1APIResources",
-            "conf_tested": false,
+            "conf_tested": true,
             "description": "get available resources"
         },
         {
@@ -18157,7 +18182,7 @@
             "group": null,
             "level": "stable",
             "tests": [
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-storage] CSIStorageCapacity  should support CSIStorageCapacities API operations [Conformance]",
                 null
             ],
@@ -18963,7 +18988,7 @@
                 "[sig-api-machinery] CustomResourceValidationRules [Privileged:ClusterAdmin] MUST NOT fail validation for create of a custom resource that satisfies the x-kubernetes-validations rules",
                 "[sig-api-machinery] Discovery Custom resource should have storage version hash",
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
@@ -19356,6 +19381,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -19496,6 +19522,7 @@
                 "[sig-storage] ConfigMap should be consumable in multiple volumes in the same pod [NodeConformance] [Conformance]",
                 "[sig-storage] ConfigMap should be immutable if `immutable` field is set [Conformance]",
                 "[sig-storage] ConfigMap updates should be reflected in volume [NodeConformance] [Conformance]",
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support CSIVolumeSource in Pod API [Conformance]",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -20463,7 +20490,7 @@
                 "[sig-api-machinery] CustomResourceValidationRules [Privileged:ClusterAdmin] MUST NOT fail validation for create of a custom resource that satisfies the x-kubernetes-validations rules",
                 "[sig-api-machinery] Discovery Custom resource should have storage version hash",
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
@@ -20856,6 +20883,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -20996,6 +21024,7 @@
                 "[sig-storage] ConfigMap should be consumable in multiple volumes in the same pod [NodeConformance] [Conformance]",
                 "[sig-storage] ConfigMap should be immutable if `immutable` field is set [Conformance]",
                 "[sig-storage] ConfigMap updates should be reflected in volume [NodeConformance] [Conformance]",
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support CSIVolumeSource in Pod API [Conformance]",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -21449,7 +21478,7 @@
                 "[sig-api-machinery] CustomResourceValidationRules [Privileged:ClusterAdmin] MUST NOT fail validation for create of a custom resource that satisfies the x-kubernetes-validations rules",
                 "[sig-api-machinery] Discovery Custom resource should have storage version hash",
                 "[sig-api-machinery] Discovery should accurately determine present and missing resources",
-                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup",
+                "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
                 "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
                 "[sig-api-machinery] FieldValidation should create/apply an invalid CR with extra properties for CRD with validation schema [Conformance]",
@@ -21842,6 +21871,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] InitContainer [NodeConformance] should invoke init containers on a RestartAlways pod [Conformance]",
@@ -21982,6 +22012,7 @@
                 "[sig-storage] ConfigMap should be consumable in multiple volumes in the same pod [NodeConformance] [Conformance]",
                 "[sig-storage] ConfigMap should be immutable if `immutable` field is set [Conformance]",
                 "[sig-storage] ConfigMap updates should be reflected in volume [NodeConformance] [Conformance]",
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support CSIVolumeSource in Pod API [Conformance]",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -22867,17 +22898,18 @@
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] provisioning should provision storage with mount options",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should be able to unmount after the subpath directory is deleted [LinuxOnly]",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support existing directories when readOnly specified in the volumeSource",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support existing directory",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support existing single file [LinuxOnly]",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support file as subpath [LinuxOnly]",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support non-existent path",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] subPath should support readOnly file specified in the volumeMount [LinuxOnly]",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] volumes should allow exec of files on the volume",
-                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (default fs)] volumes should store data",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Dynamic PV (filesystem volmode)] volumeMode should not mount / map unused volumes in a pod [LinuxOnly]",
-                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (immediate-binding)] ephemeral should create read-only inline ephemeral volume",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (immediate-binding)] ephemeral should create read/write inline ephemeral volume",
-                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (immediate-binding)] ephemeral should support two pods which have the same volume definition",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (late-binding)] ephemeral should create read/write inline ephemeral volume",
-                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Inline-volume (default fs)] volumes should allow exec of files on the volume",
-                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Pre-provisioned PV (default fs)] volumes should store data",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (late-binding)] ephemeral should support expansion of pvcs created for ephemeral pvcs",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Generic Ephemeral-volume (default fs) (late-binding)] ephemeral should support two pods which have the same volume definition",
+                "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Inline-volume (default fs)] volumes should store data",
                 "[sig-storage] In-tree Volumes [Driver: nfs] [Testpattern: Pre-provisioned PV (filesystem volmode)] volumeMode should not mount / map unused volumes in a pod [LinuxOnly]",
                 null
             ],
@@ -22999,6 +23031,7 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 null
             ],
@@ -23842,6 +23875,7 @@
             "group": "",
             "level": "stable",
             "tests": [
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (block volmode)] provisioning should provision storage with pvc data source",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (block volmode)] volumes should store data",
@@ -24416,10 +24450,10 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
-                null
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver"
             ],
             "action": "patch",
-            "tested": false,
+            "tested": true,
             "release": "1.28.0",
             "version": "v1",
             "category": "storage",
@@ -24799,7 +24833,8 @@
             "group": "autoscaling",
             "level": "stable",
             "tests": [
-                "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]"
+                "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]",
+                null
             ],
             "action": "get",
             "tested": true,
@@ -25715,6 +25750,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Events should be sent by kubelets and the scheduler about pods scheduling and running",
                 "[sig-node] KubeletManagedEtcHosts should test kubelet managed /etc/hosts file [LinuxOnly] [NodeConformance] [Conformance]",
@@ -26181,10 +26217,10 @@
             "group": "",
             "level": "stable",
             "tests": [
-                null
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod"
             ],
             "action": "get",
-            "tested": false,
+            "tested": true,
             "release": "1.28.0",
             "version": "v1",
             "category": "core",
@@ -26226,6 +26262,11 @@
                 "[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a ClusterIP service",
                 "[sig-network] Conntrack should be able to preserve UDP traffic when server pod cycles for a NodePort service",
                 "[sig-network] Conntrack should drop INVALID conntrack entries [Privileged]",
+                "[sig-network] DNS HostNetwork should resolve DNS of partial qualified names for services on hostNetwork pods with dnsPolicy: ClusterFirstWithHostNet [LinuxOnly]",
+                "[sig-network] DNS should provide DNS for ExternalName services [Conformance]",
+                "[sig-network] DNS should provide DNS for pods for Subdomain [Conformance]",
+                "[sig-network] DNS should provide DNS for services  [Conformance]",
+                "[sig-network] DNS should resolve DNS of partial qualified names for services [LinuxOnly] [Conformance]",
                 "[sig-node] ConfigMap should be consumable via environment variable [NodeConformance] [Conformance]",
                 "[sig-node] ConfigMap should be consumable via the environment [NodeConformance] [Conformance]",
                 "[sig-node] Container Lifecycle Hook when create a pod with lifecycle hook should execute poststart exec hook properly [NodeConformance] [Conformance]",
@@ -26244,6 +26285,7 @@
                 "[sig-node] Downward API should provide host IP as an env var [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod name, namespace and IP address as env vars [NodeConformance] [Conformance]",
                 "[sig-node] Downward API should provide pod UID as env vars [NodeConformance] [Conformance]",
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod",
                 "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "[sig-node] Kubelet when scheduling a busybox command in a pod should print the output to logs [NodeConformance] [Conformance]",
                 "[sig-node] Kubelet when scheduling an agnhost Pod with hostAliases should write entries to /etc/hosts [NodeConformance] [Conformance]",
@@ -26346,6 +26388,7 @@
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (default fs)] subPath should support readOnly file specified in the volumeMount [LinuxOnly]",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (default fs)] volume-expand should not allow expansion of pvcs without AllowVolumeExpansion property",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (default fs)] volumes should store data",
+                "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (filesystem volmode)] volumeLimits should verify that all csinodes have volume limits",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Dynamic PV (filesystem volmode)] volumeMode should not mount / map unused volumes in a pod [LinuxOnly]",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Generic Ephemeral-volume (block volmode) (late-binding)] ephemeral should create read/write inline ephemeral volume",
                 "[sig-storage] CSI Volumes [Driver: csi-hostpath] [Testpattern: Generic Ephemeral-volume (block volmode) (late-binding)] ephemeral should support expansion of pvcs created for ephemeral pvcs",
@@ -27432,6 +27475,7 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver",
                 "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should not pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
                 "[sig-storage] CSI Mock fsgroup as mount option Delegate FSGroup to CSI driver [LinuxOnly] should pass FSGroup to CSI driver if it is set in pod and driver supports VOLUME_MOUNT_GROUP",
@@ -28340,10 +28384,10 @@
             "group": "",
             "level": "stable",
             "tests": [
-                null
+                "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod"
             ],
             "action": "put",
-            "tested": false,
+            "tested": true,
             "release": "1.28.0",
             "version": "v1",
             "category": "core",
@@ -28917,10 +28961,10 @@
             "group": "storage.k8s.io",
             "level": "stable",
             "tests": [
-                null
+                "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver"
             ],
             "action": "put",
-            "tested": false,
+            "tested": true,
             "release": "1.28.0",
             "version": "v1",
             "category": "storage",
@@ -31362,11 +31406,11 @@
             "description": "replace the specified ResourceClass"
         }
     ],
-    "release_date": "2023-05-16T17:11:20",
+    "release_date": "2023-05-27T12:08:41",
     "total endpoints": 688,
-    "tested endpoints": 449,
+    "tested endpoints": 454,
     "new conformance eligible endpoints": 0,
     "total conformance eligible endpoints": 461,
-    "tested conformance eligible endpoints": 396,
+    "tested conformance eligible endpoints": 408,
     "new tested conformance eligible endpoints": 0
 }
