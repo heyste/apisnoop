@@ -132,10 +132,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getAutoscalingV2APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.23.0"
     },
     {
@@ -350,6 +356,12 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/network/endpointslice.go",
                 "release": "1.21.0",
                 "codename": "[sig-network] EndpointSlice should support creating EndpointSlice API operations [Conformance]",
@@ -375,10 +387,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getPolicyV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.21.0"
     },
     {
@@ -577,6 +595,12 @@
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
             },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            },
             null
         ],
         "endpoint": "patchCoreV1NamespacedPodEphemeralcontainers",
@@ -681,10 +705,15 @@
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            }
         ],
         "endpoint": "readCoreV1NamespacedPodEphemeralcontainers",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.21.0"
     },
     {
@@ -793,10 +822,15 @@
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            }
         ],
         "endpoint": "replaceCoreV1NamespacedPodEphemeralcontainers",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.21.0"
     },
     {
@@ -933,6 +967,12 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             {
                 "file": "test/e2e/common/node/runtimeclass.go",
                 "release": "1.20.0",
@@ -1175,6 +1215,12 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/auth/certificates.go",
                 "release": "1.19.0",
                 "codename": "[sig-auth] Certificates API [Privileged:ClusterAdmin] should support CSR API operations [Conformance]",
@@ -1188,10 +1234,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getEventsV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.19.0"
     },
     {
@@ -2271,6 +2323,12 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]",
@@ -2289,6 +2347,12 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourceDefinition resources [Privileged:ClusterAdmin] should include custom resource definition resources in discovery documents [Conformance]",
                 "testname": "Custom Resource Definition, discovery"
+            },
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
             },
             null
         ],
@@ -2666,10 +2730,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getCoordinationV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.14.0"
     },
     {
@@ -2693,10 +2763,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getSchedulingV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.14.0"
     },
     {
@@ -2984,10 +3060,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getApiregistrationV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.10.0"
     },
     {
@@ -3845,10 +3927,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getAppsV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.9.0"
     },
     {
@@ -4909,7 +4997,8 @@
                 "release": "1.21.0",
                 "codename": "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]",
                 "testname": "ReplicaSet, completes the scaling of a ReplicaSet subresource"
-            }
+            },
+            null
         ],
         "endpoint": "readAppsV1NamespacedReplicaSetScale",
         "tested_release": "1.21.0",
@@ -5444,6 +5533,12 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/network/ingressclass.go",
                 "release": "1.19.0",
                 "codename": "[sig-network] IngressClass API  should support creating IngressClass API operations [Conformance]",
@@ -5541,22 +5636,40 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getAuthenticationV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.6.0"
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getAuthorizationV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.6.0"
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             {
                 "file": "test/e2e/storage/csistoragecapacity.go",
                 "release": "1.24.0",
@@ -5947,6 +6060,12 @@
                 "testname": "Ephemeral Container Creation"
             },
             {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            },
+            {
                 "file": "test/e2e/common/node/expansion.go",
                 "release": "1.19.0",
                 "codename": "[sig-node] Variable Expansion should succeed in writing subpaths in container [Slow] [Conformance]",
@@ -6289,6 +6408,12 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
+            },
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
             },
             {
                 "file": "test/e2e/apimachinery/field_validation.go",
@@ -7165,6 +7290,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -9097,6 +9228,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -11359,6 +11496,12 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/apimachinery/field_validation.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
@@ -12233,6 +12376,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -15202,10 +15351,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getAutoscalingV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -15223,10 +15378,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getBatchV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -15255,6 +15416,12 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
+            },
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
             },
             {
                 "file": "test/e2e/apimachinery/server_version.go",
@@ -15326,10 +15493,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
             null
         ],
         "endpoint": "getCoreV1APIResources",
-        "tested_release": null,
+        "tested_release": "1.28.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -15655,6 +15828,12 @@
                 "release": "1.19.0",
                 "codename": "[sig-api-machinery] Discovery should validate PreferredVersion for each APIGroup [Conformance]",
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
+            },
+            {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
             },
             {
                 "file": "test/e2e/apimachinery/field_validation.go",
@@ -16531,6 +16710,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -18853,6 +19038,12 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/apimachinery/field_validation.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
@@ -19727,6 +19918,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -21117,6 +21314,12 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/discovery.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] Discovery should locate the groupVersion and a resource within each APIGroup [Conformance]",
+                "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
+            },
+            {
                 "file": "test/e2e/apimachinery/field_validation.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] FieldValidation should create/apply a CR with unknown fields for CRD with no validation schema [Conformance]",
@@ -21991,6 +22194,12 @@
                 "release": "1.25.0",
                 "codename": "[sig-node] Ephemeral Containers [NodeConformance] will start an ephemeral container in an existing pod [Conformance]",
                 "testname": "Ephemeral Container Creation"
+            },
+            {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
             },
             {
                 "file": "test/e2e/common/node/expansion.go",
@@ -24612,6 +24821,12 @@
                 "testname": "Ephemeral Container Creation"
             },
             {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            },
+            {
                 "file": "test/e2e/common/node/expansion.go",
                 "release": "1.19.0",
                 "codename": "[sig-node] Variable Expansion should allow substituting values in a volume subpath [Conformance]",
@@ -25694,6 +25909,12 @@
                 "testname": "Ephemeral Container Creation"
             },
             {
+                "file": "test/e2e/common/node/ephemeral_containers.go",
+                "release": "1.28.0",
+                "codename": "[sig-node] Ephemeral Containers [NodeConformance] should update the ephemeral containers in an existing pod [Conformance]",
+                "testname": "Ephemeral Container, update ephemeral containers"
+            },
+            {
                 "file": "test/e2e/common/node/expansion.go",
                 "release": "1.19.0",
                 "codename": "[sig-node] Variable Expansion should allow substituting values in a volume subpath [Conformance]",
@@ -26226,6 +26447,30 @@
                 "release": "1.9.0",
                 "codename": "[sig-storage] Secrets should be consumable in multiple volumes in a pod [NodeConformance] [Conformance]",
                 "testname": "Secrets Volume, mapping multiple volume paths"
+            },
+            {
+                "file": "test/e2e/network/dns.go",
+                "release": "1.15.0",
+                "codename": "[sig-network] DNS should provide DNS for ExternalName services [Conformance]",
+                "testname": "DNS, for ExternalName Services"
+            },
+            {
+                "file": "test/e2e/network/dns.go",
+                "release": "1.15.0",
+                "codename": "[sig-network] DNS should provide DNS for pods for Subdomain [Conformance]",
+                "testname": "DNS, resolve the subdomain"
+            },
+            {
+                "file": "test/e2e/network/dns.go",
+                "release": "1.17.0",
+                "codename": "[sig-network] DNS should resolve DNS of partial qualified names for services [LinuxOnly] [Conformance]",
+                "testname": "DNS, PQDN for services"
+            },
+            {
+                "file": "test/e2e/network/dns.go",
+                "release": "1.9.0",
+                "codename": "[sig-network] DNS should provide DNS for services  [Conformance]",
+                "testname": "DNS, services"
             },
             {
                 "file": "test/e2e/node/security_context.go",
@@ -27107,8 +27352,7 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] ResourceQuota should be able to update and delete ResourceQuota. [Conformance]",
                 "testname": "ResourceQuota, update and delete"
-            },
-            null
+            }
         ],
         "endpoint": "replaceCoreV1NamespacedResourceQuota",
         "tested_release": "1.16.0",
