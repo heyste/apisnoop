@@ -1616,12 +1616,6 @@
         "tests": [
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -1629,7 +1623,7 @@
             null
         ],
         "endpoint": "createStorageV1CSIDriver",
-        "tested_release": "1.26.0",
+        "tested_release": "1.28.0",
         "promotion_release": "1.18.0"
     },
     {
@@ -1649,12 +1643,6 @@
         "tests": [
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -1662,17 +1650,11 @@
             null
         ],
         "endpoint": "deleteStorageV1CSIDriver",
-        "tested_release": "1.26.0",
+        "tested_release": "1.28.0",
         "promotion_release": "1.18.0"
     },
     {
         "tests": [
-            {
-                "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
             {
                 "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
@@ -1682,7 +1664,7 @@
             null
         ],
         "endpoint": "listStorageV1CSIDriver",
-        "tested_release": "1.26.0",
+        "tested_release": "1.28.0",
         "promotion_release": "1.18.0"
     },
     {
@@ -1702,12 +1684,6 @@
         "tests": [
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -1715,7 +1691,7 @@
             null
         ],
         "endpoint": "readStorageV1CSIDriver",
-        "tested_release": "1.26.0",
+        "tested_release": "1.28.0",
         "promotion_release": "1.18.0"
     },
     {
@@ -1849,7 +1825,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should not be able to mutate or prevent deletion of webhook configuration objects [Conformance]",
                 "testname": "Admission webhook, admission control not allowed on webhook configuration objects"
-            }
+            },
+            null
         ],
         "endpoint": "createAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -1910,7 +1887,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
-            }
+            },
+            null
         ],
         "endpoint": "createAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2157,7 +2135,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should not be able to mutate or prevent deletion of webhook configuration objects [Conformance]",
                 "testname": "Admission webhook, admission control not allowed on webhook configuration objects"
-            }
+            },
+            null
         ],
         "endpoint": "deleteAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2212,7 +2191,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
-            }
+            },
+            null
         ],
         "endpoint": "deleteAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2562,7 +2542,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a mutating webhook should work [Conformance]",
                 "testname": "Admission webhook, update mutating webhook"
-            }
+            },
+            null
         ],
         "endpoint": "readAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2575,7 +2556,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
-            }
+            },
+            null
         ],
         "endpoint": "readAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2627,7 +2609,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a mutating webhook should work [Conformance]",
                 "testname": "Admission webhook, update mutating webhook"
-            }
+            },
+            null
         ],
         "endpoint": "replaceAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2640,7 +2623,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
-            }
+            },
+            null
         ],
         "endpoint": "replaceAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -8580,12 +8564,6 @@
             },
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -13672,12 +13650,6 @@
             },
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -13803,12 +13775,6 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should honor timeout [Conformance]",
                 "testname": "Admission webhook, honor timeout"
-            },
-            {
-                "file": "test/e2e/apimachinery/webhook.go",
-                "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate configmap [Conformance]",
-                "testname": "Admission webhook, ordered mutation"
             },
             {
                 "file": "test/e2e/auth/service_accounts.go",
@@ -18018,12 +17984,6 @@
             },
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -18511,6 +18471,12 @@
                 "release": "1.12.0",
                 "codename": "[sig-apps] Deployment RollingUpdateDeployment should delete old pods and create new ones [Conformance]",
                 "testname": "Deployment RollingUpdate"
+            },
+            {
+                "file": "test/e2e/apps/deployment.go",
+                "release": "1.20.0",
+                "codename": "[sig-apps] Deployment should run the lifecycle of a Deployment [Conformance]",
+                "testname": "Deployment, completes the lifecycle of a Deployment"
             },
             {
                 "file": "test/e2e/apps/deployment.go",
@@ -21226,12 +21192,6 @@
             },
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -23508,12 +23468,6 @@
             },
             {
                 "file": "test/e2e/storage/csi_inline.go",
-                "release": "1.26.0",
-                "codename": "[sig-storage] CSIInlineVolumes should support ephemeral VolumeLifecycleMode in CSIDriver API [Conformance]",
-                "testname": "CSIInlineVolumes should support ephemeral CSIDrivers"
-            },
-            {
-                "file": "test/e2e/storage/csi_inline.go",
                 "release": "1.28.0",
                 "codename": "[sig-storage] CSIInlineVolumes should run through the lifecycle of a CSIDriver [Conformance]",
                 "testname": "CSIDriver, lifecycle"
@@ -23990,7 +23944,8 @@
                 "release": "1.22.0",
                 "codename": "[sig-apps] Daemon set [Serial] should verify changes to a daemon set status [Conformance]",
                 "testname": "DaemonSet, status sub-resource"
-            }
+            },
+            null
         ],
         "endpoint": "patchCoreV1Namespace",
         "tested_release": "1.10.0",
