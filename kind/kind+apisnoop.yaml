@@ -26,7 +26,7 @@ kubeadmConfigPatches:
 nodes:
   # Second entry under nodes
   - role: control-plane
-    image: kindest/node:v1.27.2@sha256:acf40c55718d987703d603fe543d54707e428640bdd46d47120b920b59d75b82
+    image: kindest/node:v1.27.3@sha256:3966ac761ae0136263ffdb6cfd4db23ef8a83cba8a463690e98317add2c9ba72
     extraMounts:
       - hostPath: audit
         containerPath: /etc/kubernetes/pki/audit
@@ -40,7 +40,7 @@ nodes:
         hostPort: 5432
 
   - role: worker
-    image: kindest/node:v1.27.2@sha256:acf40c55718d987703d603fe543d54707e428640bdd46d47120b920b59d75b82
+    image: kindest/node:v1.27.3@sha256:3966ac761ae0136263ffdb6cfd4db23ef8a83cba8a463690e98317add2c9ba72
     extraMounts:
       - containerPath: /var/run/docker.sock
         hostPath: /var/run/docker.sock
