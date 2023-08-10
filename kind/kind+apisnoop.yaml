@@ -32,7 +32,7 @@ nodes:
         containerPath: /etc/kubernetes/pki/audit
         readOnly: True
       - hostPath: manifests/apisnoop.yaml
-        containerPath: /etc/kubernetes/manifests/apisnoop.yaml
+        containerPath: /opt/apisnoop.yaml
         readOnly: True
     # we want to use psql from our host
     extraPortMappings:
