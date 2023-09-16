@@ -369,6 +369,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should serve a basic endpoint from pods  [Conformance]",
                 "testname": "Service, endpoints"
@@ -628,6 +634,12 @@
                 "release": "1.19.0",
                 "codename": "[sig-network] Services should have session affinity work for service with type clusterIP [LinuxOnly] [Conformance]",
                 "testname": "Service, ClusterIP type, session affinity to ClientIP"
+            },
+            {
+                "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
             },
             {
                 "file": "test/e2e/network/service.go",
@@ -1495,7 +1507,8 @@
                 "release": "1.19.0",
                 "codename": "[sig-instrumentation] Events API should ensure that an event can be fetched, patched, deleted, and listed [Conformance]",
                 "testname": "New Event resource lifecycle, testing a single event"
-            }
+            },
+            null
         ],
         "endpoint": "patchEventsV1NamespacedEvent",
         "tested_release": "1.19.0",
@@ -6469,6 +6482,18 @@
                 "testname": "aggregator-supports-the-sample-apiserver"
             },
             {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
+            },
+            {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert a non homogeneous list of CRs [Conformance]",
@@ -8552,6 +8577,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -8699,6 +8730,12 @@
                 "release": "1.13.0",
                 "codename": "[sig-storage] EmptyDir wrapper volumes should not conflict [Conformance]",
                 "testname": "EmptyDir Wrapper Volume, Secret and ConfigMap volumes, no conflict"
+            },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
             },
             {
                 "file": "test/e2e/storage/subpath.go",
@@ -9130,10 +9167,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "createCoreV1NamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -10256,6 +10299,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should serve a basic endpoint from pods  [Conformance]",
                 "testname": "Service, endpoints"
@@ -10400,6 +10449,18 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
+            },
             {
                 "file": "test/e2e/common/node/podtemplates.go",
                 "release": "1.19.0",
@@ -11274,6 +11335,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should serve a basic endpoint from pods  [Conformance]",
                 "testname": "Service, endpoints"
@@ -11350,10 +11417,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "createCoreV1PersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -11442,10 +11515,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "deleteCoreV1CollectionNamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -11540,10 +11619,15 @@
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            }
         ],
         "endpoint": "deleteCoreV1CollectionPersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -11553,6 +11637,18 @@
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
                 "testname": "aggregator-supports-the-sample-apiserver"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
             },
             {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
@@ -13638,6 +13734,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -13787,6 +13889,12 @@
                 "testname": "EmptyDir Wrapper Volume, Secret and ConfigMap volumes, no conflict"
             },
             {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
+            {
                 "file": "test/e2e/storage/subpath.go",
                 "release": "1.12.0",
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with configmap pod [Conformance]",
@@ -13887,8 +13995,8 @@
             {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny attaching pod [Conformance]",
-                "testname": "Admission webhook, deny attach"
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny pod and configmap creation [Conformance]",
+                "testname": "Admission webhook, deny create"
             },
             {
                 "file": "test/e2e/apimachinery/webhook.go",
@@ -13980,10 +14088,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "deleteCoreV1NamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -15395,10 +15509,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "deleteCoreV1PersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -15893,6 +16013,18 @@
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
                 "testname": "aggregator-supports-the-sample-apiserver"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
             },
             {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
@@ -17978,6 +18110,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -18125,6 +18263,12 @@
                 "release": "1.13.0",
                 "codename": "[sig-storage] EmptyDir wrapper volumes should not conflict [Conformance]",
                 "testname": "EmptyDir Wrapper Volume, Secret and ConfigMap volumes, no conflict"
+            },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
             },
             {
                 "file": "test/e2e/storage/subpath.go",
@@ -18343,6 +18487,12 @@
                 "release": "1.9.0",
                 "codename": "[sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Should recreate evicted statefulset [Conformance]",
                 "testname": "StatefulSet, Recreate Failed Pod"
+            },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
             },
             null
         ],
@@ -18847,6 +18997,18 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
+            },
+            {
                 "file": "test/e2e/common/node/podtemplates.go",
                 "release": "1.19.0",
                 "codename": "[sig-node] PodTemplates should delete a collection of pod templates [Conformance]",
@@ -18989,6 +19151,18 @@
                 "testname": "aggregator-supports-the-sample-apiserver"
             },
             {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
+            },
+            {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert a non homogeneous list of CRs [Conformance]",
@@ -21072,6 +21246,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -21219,6 +21399,12 @@
                 "release": "1.13.0",
                 "codename": "[sig-storage] EmptyDir wrapper volumes should not conflict [Conformance]",
                 "testname": "EmptyDir Wrapper Volume, Secret and ConfigMap volumes, no conflict"
+            },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
             },
             {
                 "file": "test/e2e/storage/subpath.go",
@@ -21265,6 +21451,18 @@
                 "testname": "aggregator-supports-the-sample-apiserver"
             },
             {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should return chunks of results for list calls [Conformance]",
+                "testname": "API Chunking, server should return chunks of results for list calls"
+            },
+            {
+                "file": "test/e2e/apimachinery/chunking.go",
+                "release": "1.29.0",
+                "codename": "[sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance]",
+                "testname": "API Chunking, server should support continue listing from the last key even if the original version has been compacted away"
+            },
+            {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert a non homogeneous list of CRs [Conformance]",
@@ -23348,6 +23546,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -23495,6 +23699,12 @@
                 "release": "1.13.0",
                 "codename": "[sig-storage] EmptyDir wrapper volumes should not conflict [Conformance]",
                 "testname": "EmptyDir Wrapper Volume, Secret and ConfigMap volumes, no conflict"
+            },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
             },
             {
                 "file": "test/e2e/storage/subpath.go",
@@ -23582,6 +23792,12 @@
                 "codename": "[sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Should recreate evicted statefulset [Conformance]",
                 "testname": "StatefulSet, Recreate Failed Pod"
             },
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "listCoreV1PersistentVolume",
@@ -23590,10 +23806,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "listCoreV1PersistentVolumeClaimForAllNamespaces",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -24018,10 +24240,15 @@
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            }
         ],
         "endpoint": "patchCoreV1NamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -24291,10 +24518,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "patchCoreV1PersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -24610,6 +24843,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should serve a basic endpoint from pods  [Conformance]",
                 "testname": "Service, endpoints"
@@ -24654,10 +24893,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "readCoreV1NamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -25815,6 +26060,12 @@
                 "release": "1.19.0",
                 "codename": "[sig-network] Services should have session affinity work for service with type clusterIP [LinuxOnly] [Conformance]",
                 "testname": "Service, ClusterIP type, session affinity to ClientIP"
+            },
+            {
+                "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
             },
             {
                 "file": "test/e2e/network/service.go",
@@ -27032,6 +27283,12 @@
             },
             {
                 "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
+            {
+                "file": "test/e2e/network/service.go",
                 "release": "1.9.0",
                 "codename": "[sig-network] Services should provide secure master service  [Conformance]",
                 "testname": "Kubernetes Service"
@@ -27182,10 +27439,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "readCoreV1PersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -27365,10 +27628,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "replaceCoreV1NamespacedPersistentVolumeClaim",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
@@ -27617,6 +27886,12 @@
                 "codename": "[sig-network] Services should be able to switch session affinity for service with type clusterIP [LinuxOnly] [Conformance]",
                 "testname": "Service, ClusterIP type, session affinity to None"
             },
+            {
+                "file": "test/e2e/network/service.go",
+                "release": "1.29.0",
+                "codename": "[sig-network] Services should serve endpoints on same port and different protocols [Conformance]",
+                "testname": "Service, should serve endpoints on same port and different protocols."
+            },
             null
         ],
         "endpoint": "replaceCoreV1NamespacedService",
@@ -27711,10 +27986,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/persistent_volumes.go",
+                "release": "1.29.0",
+                "codename": "[sig-storage] PersistentVolumes CSI Conformance should run through the lifecycle of a PV and a PVC [Conformance]",
+                "testname": "PersistentVolumes(Claims), lifecycle"
+            },
             null
         ],
         "endpoint": "replaceCoreV1PersistentVolume",
-        "tested_release": null,
+        "tested_release": "1.29.0",
         "promotion_release": "1.5.0"
     },
     {
