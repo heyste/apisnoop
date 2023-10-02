@@ -37,7 +37,7 @@ spec:
       initContainers:
         - name: cptoken
           image: busybox
-          command: ['sh', '-c', 'cp /run/secrets/kubernetes.io/serviceaccount/token /opt/token.txt']
+          command: ['sh', '-c', 'cp /var/run/secrets/kubernetes.io/serviceaccount/token /opt/token.txt']
           volumeMounts:
             - name: data
               mountPath: /opt
