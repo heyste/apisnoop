@@ -21,7 +21,7 @@ spec:
       emptyDir: {}
   containers:
     - name: snoopdb
-      image: "gcr.io/k8s-staging-apisnoop/snoopdb:v20210824-0.2.0-70-g0faa7b3"
+      image: "gcr.io/k8s-staging-apisnoop/snoopdb:v20240109-snoopdb-1.4.2-47-g51969fb"
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 5432

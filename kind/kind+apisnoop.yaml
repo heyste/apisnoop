@@ -24,8 +24,8 @@ kubeadmConfigPatches:
         "audit-policy-file": "/etc/kubernetes/pki/audit/policy.yaml"
 
 nodes:
-  # Second entry under nodes
   - role: control-plane
+    image: kindest/node:v1.29.0@sha256:54a50c9354f11ce0aa56a85d2cacb1b950f85eab3fe1caf988826d1f89bf37eb
     extraMounts:
       - hostPath: audit
         containerPath: /etc/kubernetes/pki/audit
@@ -47,6 +47,7 @@ nodes:
     #   hostPort: 10350
 
   - role: worker
+    image: kindest/node:v1.29.0@sha256:54a50c9354f11ce0aa56a85d2cacb1b950f85eab3fe1caf988826d1f89bf37eb
     extraMounts:
       # - containerPath: /var/local-path-provisioner
       #   hostPath: /tmp/workspace/pvcs
