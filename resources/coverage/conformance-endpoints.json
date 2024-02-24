@@ -3063,7 +3063,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourcePublishOpenAPI [Privileged:ClusterAdmin] removes definition from spec when one version gets changed to not be served [Conformance]",
                 "testname": "Custom Resource OpenAPI Publish, stop serving version"
-            }
+            },
+            null
         ],
         "endpoint": "replaceApiextensionsV1CustomResourceDefinition",
         "tested_release": "1.16.0",
@@ -14377,18 +14378,6 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
-            },
-            {
-                "file": "test/e2e/apimachinery/webhook.go",
-                "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny attaching pod [Conformance]",
-                "testname": "Admission webhook, deny attach"
-            },
-            {
-                "file": "test/e2e/apimachinery/webhook.go",
-                "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny pod and configmap creation [Conformance]",
-                "testname": "Admission webhook, deny create"
             },
             {
                 "file": "test/e2e/apimachinery/webhook.go",
