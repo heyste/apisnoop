@@ -2,6 +2,289 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            null
+        ],
+        "endpoint": "createAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            }
+        ],
+        "endpoint": "createAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            }
+        ],
+        "endpoint": "deleteAdmissionregistrationV1CollectionValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            }
+        ],
+        "endpoint": "deleteAdmissionregistrationV1CollectionValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            null
+        ],
+        "endpoint": "deleteAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            }
+        ],
+        "endpoint": "deleteAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            null
+        ],
+        "endpoint": "getStoragemigrationAPIGroup",
+        "tested_release": null,
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            null
+        ],
+        "endpoint": "listAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            null
+        ],
+        "endpoint": "listAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            }
+        ],
+        "endpoint": "patchAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            }
+        ],
+        "endpoint": "patchAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            null
+        ],
+        "endpoint": "patchAdmissionregistrationV1ValidatingAdmissionPolicyStatus",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            null
+        ],
+        "endpoint": "readAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            }
+        ],
+        "endpoint": "readAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            }
+        ],
+        "endpoint": "readAdmissionregistrationV1ValidatingAdmissionPolicyStatus",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            }
+        ],
+        "endpoint": "replaceAdmissionregistrationV1ValidatingAdmissionPolicy",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            }
+        ],
+        "endpoint": "replaceAdmissionregistrationV1ValidatingAdmissionPolicyBinding",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            }
+        ],
+        "endpoint": "replaceAdmissionregistrationV1ValidatingAdmissionPolicyStatus",
+        "tested_release": "1.30.0",
+        "promotion_release": "1.30.0"
+    },
+    {
+        "tests": [
+            {
                 "file": "test/e2e/apimachinery/flowcontrol.go",
                 "release": "1.29.0",
                 "codename": "[sig-api-machinery] API priority and fairness should support FlowSchema API operations [Conformance]",
@@ -847,6 +1130,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/network/endpointslice.go",
@@ -2248,6 +2561,24 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should not be able to mutate or prevent deletion of webhook configuration objects [Conformance]",
                 "testname": "Admission webhook, admission control not allowed on webhook configuration objects"
             },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
             null
         ],
         "endpoint": "createAdmissionregistrationV1MutatingWebhookConfiguration",
@@ -2310,7 +2641,18 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            }
         ],
         "endpoint": "createAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2318,6 +2660,18 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
             {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
                 "release": "1.16.0",
@@ -2558,7 +2912,18 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should not be able to mutate or prevent deletion of webhook configuration objects [Conformance]",
                 "testname": "Admission webhook, admission control not allowed on webhook configuration objects"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            }
         ],
         "endpoint": "deleteAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2614,7 +2979,12 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            }
         ],
         "endpoint": "deleteAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -2635,6 +3005,18 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
             {
                 "file": "test/e2e/apimachinery/crd_conversion_webhook.go",
                 "release": "1.16.0",
@@ -2800,6 +3182,18 @@
                 "testname": "Discovery, confirm the groupVerion and a resourcefrom each apiGroup"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]",
@@ -2963,6 +3357,12 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a mutating webhook should work [Conformance]",
                 "testname": "Admission webhook, update mutating webhook"
             },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
             null
         ],
         "endpoint": "readAdmissionregistrationV1MutatingWebhookConfiguration",
@@ -2977,7 +3377,12 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            }
         ],
         "endpoint": "readAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -3030,7 +3435,12 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a mutating webhook should work [Conformance]",
                 "testname": "Admission webhook, update mutating webhook"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            }
         ],
         "endpoint": "replaceAdmissionregistrationV1MutatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -3044,7 +3454,12 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
             },
-            null
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            }
         ],
         "endpoint": "replaceAdmissionregistrationV1ValidatingWebhookConfiguration",
         "tested_release": "1.16.0",
@@ -3063,7 +3478,8 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] CustomResourcePublishOpenAPI [Privileged:ClusterAdmin] removes definition from spec when one version gets changed to not be served [Conformance]",
                 "testname": "Custom Resource OpenAPI Publish, stop serving version"
-            }
+            },
+            null
         ],
         "endpoint": "replaceApiextensionsV1CustomResourceDefinition",
         "tested_release": "1.16.0",
@@ -3371,42 +3787,71 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "createStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            }
         ],
         "endpoint": "deleteStorageV1CollectionVolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "deleteStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "listStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "patchStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
@@ -3419,10 +3864,16 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "readStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
@@ -3435,10 +3886,15 @@
     },
     {
         "tests": [
-            null
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            }
         ],
         "endpoint": "replaceStorageV1VolumeAttachment",
-        "tested_release": null,
+        "tested_release": "1.30.0",
         "promotion_release": "1.13.0"
     },
     {
@@ -3725,6 +4181,18 @@
                 "testname": "Garbage Collector, delete deployment, propagation policy orphan"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] listing mutating webhooks should work [Conformance]",
@@ -3827,6 +4295,36 @@
                 "testname": "Admission webhook, fail closed"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
+            {
                 "file": "test/e2e/apps/deployment.go",
                 "release": "1.12.0",
                 "codename": "[sig-apps] Deployment deployment should delete old replica sets [Conformance]",
@@ -3887,6 +4385,18 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] ResourceQuota should create a ResourceQuota and capture the life of a replica set. [Conformance]",
                 "testname": "ResourceQuota, object count quota, replicaSet"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
             },
             {
                 "file": "test/e2e/apps/deployment.go",
@@ -4224,6 +4734,18 @@
                 "testname": "Garbage Collector, delete deployment, propagation policy orphan"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] listing mutating webhooks should work [Conformance]",
@@ -4325,6 +4847,36 @@
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
             },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
             null
         ],
         "endpoint": "deleteAppsV1NamespacedDeployment",
@@ -4338,6 +4890,18 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] ResourceQuota should create a ResourceQuota and capture the life of a replica set. [Conformance]",
                 "testname": "ResourceQuota, object count quota, replicaSet"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
             },
             null
         ],
@@ -4759,6 +5323,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/deployment.go",
@@ -5324,6 +5918,36 @@
                 "testname": "Admission webhook, fail closed"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
+            {
                 "file": "test/e2e/apps/deployment.go",
                 "release": "1.12.0",
                 "codename": "[sig-apps] Deployment deployment should delete old replica sets [Conformance]",
@@ -5467,7 +6091,8 @@
                 "release": "1.21.0",
                 "codename": "[sig-apps] ReplicaSet Replicaset should have a working scale subresource [Conformance]",
                 "testname": "ReplicaSet, completes the scaling of a ReplicaSet subresource"
-            }
+            },
+            null
         ],
         "endpoint": "readAppsV1NamespacedReplicaSetScale",
         "tested_release": "1.21.0",
@@ -5950,6 +6575,18 @@
                 "testname": "Discovery, confirm the PreferredVersion for each api group"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]",
@@ -6279,7 +6916,8 @@
                 "release": "1.13.0",
                 "codename": "[sig-node] Pods should support remote command execution over websockets [NodeConformance] [Conformance]",
                 "testname": "Pods, remote command execution over websocket"
-            }
+            },
+            null
         ],
         "endpoint": "connectCoreV1GetNamespacedPodExec",
         "tested_release": "1.13.0",
@@ -6802,6 +7440,30 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -7150,6 +7812,30 @@
                 "testname": "API metadata HTTP return"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/watch.go",
                 "release": "1.11.0",
                 "codename": "[sig-api-machinery] Watchers should be able to restart watching from the last resource version observed by the previous watch [Conformance]",
@@ -7280,6 +7966,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -9117,6 +9833,12 @@
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with secret pod [Conformance]",
                 "testname": "SubPath: Reading content from a secret volume."
             },
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "createCoreV1Namespace",
@@ -9256,6 +9978,12 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
             },
             {
                 "file": "test/e2e/common/node/configmap.go",
@@ -11202,6 +11930,36 @@
                 "testname": "Admission webhook, fail closed"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
+            {
                 "file": "test/e2e/common/node/secrets.go",
                 "release": "1.15.0",
                 "codename": "[sig-node] Secrets should fail to create secret due to empty secret key [Conformance]",
@@ -11502,6 +12260,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/statefulset.go",
@@ -11995,6 +12783,30 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -12343,6 +13155,30 @@
                 "testname": "API metadata HTTP return"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/watch.go",
                 "release": "1.11.0",
                 "codename": "[sig-api-machinery] Watchers should be able to restart watching from the last resource version observed by the previous watch [Conformance]",
@@ -12473,6 +13309,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -14310,6 +15176,12 @@
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with secret pod [Conformance]",
                 "testname": "SubPath: Reading content from a secret volume."
             },
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
+            },
             null
         ],
         "endpoint": "deleteCoreV1Namespace",
@@ -14377,18 +15249,6 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]",
                 "testname": "Admission webhook, update validating webhook"
-            },
-            {
-                "file": "test/e2e/apimachinery/webhook.go",
-                "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny attaching pod [Conformance]",
-                "testname": "Admission webhook, deny attach"
-            },
-            {
-                "file": "test/e2e/apimachinery/webhook.go",
-                "release": "1.16.0",
-                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny pod and configmap creation [Conformance]",
-                "testname": "Admission webhook, deny create"
             },
             {
                 "file": "test/e2e/apimachinery/webhook.go",
@@ -15618,6 +16478,36 @@
                 "testname": "Admission webhook, fail closed"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
+            {
                 "file": "test/e2e/common/storage/projected_secret.go",
                 "release": "1.9.0",
                 "codename": "[sig-storage] Projected secret optional updates should be reflected in volume [NodeConformance] [Conformance]",
@@ -15776,6 +16666,36 @@
                 "testname": "Admission webhook, fail closed"
             },
             {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
+            },
+            {
                 "file": "test/e2e/network/dns.go",
                 "release": "1.15.0",
                 "codename": "[sig-network] DNS should provide DNS for ExternalName services [Conformance]",
@@ -15928,6 +16848,30 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -15956,6 +16900,18 @@
                 "release": "1.29.0",
                 "codename": "[sig-api-machinery] API priority and fairness should support PriorityLevelConfiguration API operations [Conformance]",
                 "testname": "Priority and Fairness PriorityLevelConfiguration API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
             },
             {
                 "file": "test/e2e/apimachinery/webhook.go",
@@ -16151,6 +17107,24 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -16167,6 +17141,18 @@
                 "release": "1.29.0",
                 "codename": "[sig-api-machinery] API priority and fairness should support PriorityLevelConfiguration API operations [Conformance]",
                 "testname": "Priority and Fairness PriorityLevelConfiguration API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
             },
             {
                 "file": "test/e2e/auth/certificates.go",
@@ -16434,6 +17420,30 @@
     },
     {
         "tests": [
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
             {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
@@ -16783,6 +17793,30 @@
                 "testname": "API metadata HTTP return"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/watch.go",
                 "release": "1.11.0",
                 "codename": "[sig-api-machinery] Watchers should be able to restart watching from the last resource version observed by the previous watch [Conformance]",
@@ -16913,6 +17947,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -18749,6 +19813,12 @@
                 "release": "1.12.0",
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with secret pod [Conformance]",
                 "testname": "SubPath: Reading content from a secret volume."
+            },
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
             },
             null
         ],
@@ -19601,6 +20671,30 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -19949,6 +21043,30 @@
                 "testname": "API metadata HTTP return"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/watch.go",
                 "release": "1.11.0",
                 "codename": "[sig-api-machinery] Watchers should be able to restart watching from the last resource version observed by the previous watch [Conformance]",
@@ -20079,6 +21197,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -21915,6 +23063,12 @@
                 "release": "1.12.0",
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with secret pod [Conformance]",
                 "testname": "SubPath: Reading content from a secret volume."
+            },
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
             },
             null
         ],
@@ -21925,6 +23079,30 @@
     {
         "tests": [
             {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface [Conformance]",
+                "testname": "Aggregated Discovery Interface"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support aggregated discovery interface for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Interface CRDs"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery endpoint Accept headers [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers"
+            },
+            {
+                "file": "test/e2e/apimachinery/aggregated_discovery.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] AggregatedDiscovery should support raw aggregated discovery request for CRDs [Conformance]",
+                "testname": "Aggregated Discovery Endpoint Accept Headers CRDs"
+            },
+            {
                 "file": "test/e2e/apimachinery/aggregator.go",
                 "release": "1.27.0",
                 "codename": "[sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]",
@@ -22273,6 +23451,30 @@
                 "testname": "API metadata HTTP return"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/watch.go",
                 "release": "1.11.0",
                 "codename": "[sig-api-machinery] Watchers should be able to restart watching from the last resource version observed by the previous watch [Conformance]",
@@ -22403,6 +23605,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -24239,6 +25471,12 @@
                 "release": "1.12.0",
                 "codename": "[sig-storage] Subpath Atomic writer volumes should support subpaths with secret pod [Conformance]",
                 "testname": "SubPath: Reading content from a secret volume."
+            },
+            {
+                "file": "test/e2e/storage/volume_attachment.go",
+                "release": "1.30.0",
+                "codename": "[sig-storage] VolumeAttachment Conformance should run through the lifecycle of a VolumeAttachment [Conformance]",
+                "testname": "VolumeAttachment, lifecycle"
             },
             null
         ],
@@ -24534,6 +25772,30 @@
                 "testname": "Namespace patching"
             },
             {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should allow expressions to refer variables. [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicy API operations [Conformance]",
+                "testname": "ValidatingAdmissionPolicy API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should support ValidatingAdmissionPolicyBinding API operations [Conformance]",
+                "testname": "ValidatingadmissionPolicyBinding API"
+            },
+            {
+                "file": "test/e2e/apimachinery/validatingadmissionpolicy.go",
+                "release": "1.30.0",
+                "codename": "[sig-api-machinery] ValidatingAdmissionPolicy [Privileged:ClusterAdmin] should validate against a Deployment [Conformance]",
+                "testname": "ValidatingAdmissionPolicy"
+            },
+            {
                 "file": "test/e2e/apimachinery/webhook.go",
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] listing mutating webhooks should work [Conformance]",
@@ -24634,6 +25896,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/apps/controller_revision.go",
@@ -25325,6 +26617,36 @@
                 "release": "1.16.0",
                 "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]",
                 "testname": "Admission webhook, fail closed"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update mutating webhook configurations with match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, create and update mutating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to create and update validating webhook configurations with match conditions [Conformance]",
+                "testname": "Validating Admission webhook, create and update validating webhook configuration with matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate everything except 'skip-me' configmaps [Conformance]",
+                "testname": "Mutating Admission webhook, mutating webhook excluding object with specific name"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject mutating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Mutating Admission webhook, reject mutating webhook configurations with invalid matchConditions"
+            },
+            {
+                "file": "test/e2e/apimachinery/webhook.go",
+                "release": "1.28.0",
+                "codename": "[sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should reject validating webhook configurations with invalid match conditions [Conformance]",
+                "testname": "Validing Admission webhook, reject validating webhook configurations with invalid matchConditions"
             },
             {
                 "file": "test/e2e/kubectl/kubectl.go",
